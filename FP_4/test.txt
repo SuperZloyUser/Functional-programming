@@ -1,0 +1,1 @@
+[Department {name = "321", countOfTeachers = 9, countOfProfessors = 1},Department {name = "123", countOfTeachers = 6, countOfProfessors = 5},Department {name = "qwe", countOfTeachers = 9, countOfProfessors = 8}]

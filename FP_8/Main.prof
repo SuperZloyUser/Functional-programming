@@ -1,0 +1,26 @@
+	Sat Jan 11 08:41 2020 Time and Allocation Profiling Report  (Final)
+
+	   Main.exe +RTS -p -RTS
+
+	total time  =        0.00 secs   (2 ticks @ 1000 us, 1 processor)
+	total alloc =      92,496 bytes  (excludes profiling overheads)
+
+COST CENTRE MODULE           SRC                     %time %alloc
+
+main        Main             Main.hs:(39,1)-(87,21)  100.0   41.3
+CAF         GHC.IO.Exception <entire-module>           0.0    1.4
+CAF         GHC.IO.Handle.FD <entire-module>           0.0   56.4
+
+
+                                                                                individual      inherited
+COST CENTRE  MODULE                   SRC                    no.     entries  %time %alloc   %time %alloc
+
+MAIN         MAIN                     <built-in>             113          0    0.0    0.6   100.0  100.0
+ CAF         System.Exit              <entire-module>        179          0    0.0    0.0     0.0    0.0
+ CAF         GHC.IO.Handle.FD         <entire-module>        151          0    0.0   56.4     0.0   56.4
+ CAF         GHC.IO.Exception         <entire-module>        149          0    0.0    1.4     0.0    1.4
+ CAF         GHC.IO.Encoding.CodePage <entire-module>        142          0    0.0    0.2     0.0    0.2
+ CAF         GHC.IO.Encoding          <entire-module>        141          0    0.0    0.1     0.0    0.1
+ CAF         Main                     <entire-module>        121          0    0.0    0.1     0.0    0.2
+  main       Main                     Main.hs:(39,1)-(87,21) 226          1    0.0    0.1     0.0    0.1
+ main        Main                     Main.hs:(39,1)-(87,21) 227          0  100.0   41.2   100.0   41.2
